@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/harsha_vardhan_112" target="_blank" rel="noreferrer" style={{ color: '#fff', fontSize: '1.5rem', transition: 'color 0.3s' }} className="social-icon">
             <FaInstagram />
           </a>
-          <a href="https://www.linkedin.com/in/harsha-vardhan-71aa622b6/" target="_blank" rel="noreferrer" style={{ color: '#fff', fontSize: '1.5rem', transition: 'color 0.3s' }} className="social-icon">
+          <a href="https://www.linkedin.com/in/tarivitiharshavardhan/" target="_blank" rel="noreferrer" style={{ color: '#fff', fontSize: '1.5rem', transition: 'color 0.3s' }} className="social-icon">
             <FaLinkedin />
           </a>
         </div>

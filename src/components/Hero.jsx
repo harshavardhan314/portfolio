@@ -49,7 +49,7 @@ const Hero = () => {
                 </motion.a>
                 
                 <motion.a 
-                  href="https://www.linkedin.com/in/harsha-vardhan-71aa622b6/" 
+                  href="https://www.linkedin.com/in/tarivitiharshavardhan/" 
                   target="_blank" 
                   rel="noreferrer"
                   whileHover={{ y: -5, color: 'var(--accent-color)' }}
