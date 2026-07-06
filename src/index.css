@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0b0f19;
+  --text-color: #e0e0e0;
+  --accent-color: #8b5cf6; /* Purple/Blue accent */
+  --accent-light: #a78bfa;
+  --glass-bg: rgba(15, 23, 42, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Typography & General */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+  color: white;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: var(--accent-light);
+  border: 2px solid var(--accent-color);
+  padding: 8px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline-custom:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* Specific Section Styles */
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--accent-light);
+}
+
+.skill-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.project-card {
+  height: 100%;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  overflow: hidden;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-light);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* Background overlay to ensure text is readable over particles */
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, transparent 0%, #0b0f19 100%);
+  z-index: 1;
+  pointer-events: none;
+}

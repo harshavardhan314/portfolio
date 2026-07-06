@@ -1,0 +1,34 @@
+{
+  "name": "temp_app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
+    "bootstrap": "^5.3.8",
+    "boxicons": "^2.1.4",
+    "framer-motion": "^12.42.2",
+    "react": "^19.2.7",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.7.0",
+    "react-simple-typewriter": "^5.0.1",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "vite": "^8.1.1"
+  }
+}
